@@ -1,7 +1,3 @@
-Below is a Markdown README tailored for the `peer_tutor` repository based on the files you provided. It explains how to download the files into a folder and add them as an unpacked extension in Google Chrome. Since the files represent a Chrome extension that summarizes lecture transcripts using an API, I’ve included setup instructions, usage details, and prerequisites.
-
----
-
 # Peer Tutor Chrome Extension
 
 ![Peer Tutor Icon](icon16.png)
