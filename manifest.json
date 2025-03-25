@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Grok Hello Extension",
+  "version": "1.0",
+  "description": "Ask Grok for a witty hello!",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon16.png",
+      "128": "icon16.png"
+    }
+  },
+  "permissions": [
+    "background",
+    "storage",
+    "action",
+    "tabs",
+    "https://api.x.ai/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
