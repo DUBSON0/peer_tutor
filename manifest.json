@@ -12,5 +12,10 @@
       "resources": ["marked.min.js", "tab.html", "tab.js", "styles.css"],
       "matches": ["<all_urls>"]
     }
-  ]
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon16.png",
+    "128": "icon16.png"
+  }
 }

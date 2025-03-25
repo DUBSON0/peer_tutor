@@ -3,18 +3,24 @@
   <head>
     <meta charset="UTF-8">
     <title>Peer Tutor</title>
+    <!-- Google Fonts for Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <!-- Link to the CSS file for styling -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Include marked.js from a CDN for Markdown parsing -->
+    <!-- Include marked.js for Markdown parsing -->
     <script src="marked.min.js"></script>
   </head>
   <body>
-    <h1>Go to Echo360, select the text icon, and then download the .txt transcript and
-      upload it here.</h1>
-    <label for="fileInput">Select a text file to query the Grok API:</label>
-    <input type="file" id="fileInput" accept=".txt" />
-    <div id="response">Select a file to query the Grok API.</div>
-    <!-- Load tab.js after marked.js to ensure marked is available -->
+    <div class="container">
+      <h1> <img src="icon16.png" alt="Peer Tutor Icon" class="title-icon">Peer Tutor</h1>
+      <p>Go to Echo360, select the text icon, and download the .txt transcript.</p>
+      <div class="file-upload">
+        <label for="fileInput" class="file-upload-label">Upload Transcript</label>
+        <input type="file" id="fileInput" accept=".txt" />
+      </div>
+      <div id="response">Select a file to query the Peer Tutor API.</div>
+    </div>
+    <!-- Load tab.js after marked.js -->
     <script src="tab.js"></script>
   </body>
 </html>
