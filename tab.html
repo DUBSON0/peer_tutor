@@ -2,12 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Grok Extension Tab</title>
+    <title>Peer Tutor</title>
+    <!-- Link to the CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include marked.js from a CDN for Markdown parsing -->
+    <script src="marked.min.js"></script>
   </head>
   <body>
-    <h1>Grok API Query</h1>
+    <h1>Go to Echo360, select the text icon, and then download the .txt transcript and
+      upload it here.</h1>
+    <label for="fileInput">Select a text file to query the Grok API:</label>
     <input type="file" id="fileInput" accept=".txt" />
     <div id="response">Select a file to query the Grok API.</div>
+    <!-- Load tab.js after marked.js to ensure marked is available -->
     <script src="tab.js"></script>
   </body>
 </html>

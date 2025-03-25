@@ -1,10 +1,16 @@
 {
   "manifest_version": 3,
-  "name": "Grok Extension",
+  "name": "Peer Tutor",
   "version": "1.0",
   "permissions": ["storage", "tabs"],
   "background": {
     "service_worker": "background.js"
   },
-  "action": {}
+  "action": {},
+  "web_accessible_resources": [
+    {
+      "resources": ["marked.min.js", "tab.html", "tab.js", "styles.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
